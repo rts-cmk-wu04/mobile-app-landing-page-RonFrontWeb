@@ -1,0 +1,50 @@
+.whatItDoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    &__headline{
+        margin: 0;
+        text-transform: uppercase;
+        color:var(--headline-color);
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        color:var(--headline-color);
+        font-size: 1.4em;
+    }
+    &__backgroundContainer {
+        margin-top: 70px;
+        position: relative;
+        
+    }
+    &__overlay{
+       position: absolute;
+       top:0;
+       right: 0;
+       left: 0;
+       bottom: 0;
+       background-image: linear-gradient(to bottom,rgb(255, 255, 255),transparent);
+    }
+    &__backgroundImage {
+     object-fit: cover;
+     width: 100%;
+     height: 330px;
+     
+     }
+    &__backgroundImageTopOne {
+        width: 300px;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+    }
+    &__backgroundImageTopTwo {
+        width: 230px;
+        position: absolute;
+        top: 160px;
+        right: 50px;
+    }
+}

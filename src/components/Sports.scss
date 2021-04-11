@@ -1,0 +1,22 @@
+.sports {
+    box-sizing: border-box;
+    background-color: #F4F6F9;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 50px;
+
+    &__logo {
+        width: 100px;
+    }
+
+    &__store {
+        max-width: 375px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,21 @@
+.twitter {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 40px;
+  height: 200px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  &__image {
+    border-radius: 50%;
+    height: 30px;
+  }
+  &__name {
+    padding-left: 10px;
+    flex-grow: 1;
+    top: 0;
+  }
+}

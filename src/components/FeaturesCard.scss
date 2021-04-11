@@ -1,0 +1,8 @@
+.FeaturesCard {
+    display: flex;
+    flex-direction: column;
+    &__icon {
+        height: 50px;
+        padding-top:20px ;
+    }
+}

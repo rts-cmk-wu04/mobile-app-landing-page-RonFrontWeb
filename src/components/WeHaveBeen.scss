@@ -1,0 +1,9 @@
+.WeHaveBeen {
+    background-color: #F4F6F9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__image {
+        margin:15px;
+    }
+}

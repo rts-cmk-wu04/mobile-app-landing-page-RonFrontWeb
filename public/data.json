@@ -1,0 +1,39 @@
+[
+    {
+      "ID": "1",
+      "name": "Sarah Udoma",
+      "image":"/Ellipse.png",
+      "text": "This app has videos for other premier league teams who play and it also gives me nofications when my favourite team plays"
+    },
+    {
+      "ID": "2",
+      "name": "Noah Jackson",
+      "image":"/Ellipse.png",
+      "text": "I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor"
+    },
+    {
+        "ID": "3",
+        "name": "Darren Wilson",
+        "image":"/Ellipse.png",
+        "text": "Good for scores and commentary but the team lineups have stopped working. "
+    },
+    {
+        "ID": "4",
+        "name": "Michael Akinuli",
+        "image":"/Ellipse.png",
+        "text": "Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go"
+    },
+    {
+        "ID": "5",
+        "name": "Peter Stok",
+        "image":"/Ellipse.png",
+        "text": "Good for scores and commentary but the team lineups have stopped working. "
+    },
+    {
+        "ID": "6",
+        "name": "Johnny Velhet",
+        "image":"/Ellipse.png",
+        "text": "Good for scores and commentary but the team lineups have stopped working. "
+    }
+  ]
+  
