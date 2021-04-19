@@ -1,13 +1,14 @@
 .sports {
     box-sizing: border-box;
     background-color: #F4F6F9;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    padding-bottom: 50px;
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
 
     &__logo {
         width: 100px;
@@ -18,5 +19,43 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    &__image {
+        width: 100%;
+        display: block;
+    }
+    &__hidden {
+        display: none;
+    }
+    @media only screen and (min-width: 600px) {
+        & {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__container {  
+            max-height: 300px;
+            max-width: 400px;
+            align-items: flex-start;
+        }
+        &__store {
+            max-width: 320px;
+            width: 100%;
+            display: flex;
+            
+        }
+        &__hidden {
+            display: block;
+        }
+        &__reverseorder {
+            order: 1;
+        }
+      }
     }
 }

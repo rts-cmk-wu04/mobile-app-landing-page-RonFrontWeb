@@ -1,9 +1,12 @@
-.whatItDoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 70px;
+.whatItDoes {    
+    &__textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+    }
 
     &__headline{
         margin: 0;
@@ -46,5 +49,37 @@
         position: absolute;
         top: 160px;
         right: 50px;
+    }
+    @media only screen and (min-width: 600px) {
+        & {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        justify-content: center;
+
+
+        &__textContainer {
+            order: 1;
+            margin: 0;
+            display: flex;
+            align-items: flex-start;
+            max-height: 300px;
+            max-width: 400px;
+            padding: 50px;
+    
+        }
+        &__backgroundContainer {
+            order: 0;
+            margin: 0;
+            
+        }
+        &__overlay{
+            display: none;
+         }
+         &__backgroundImage {
+            grid-template-rows:span 2 ;
+            
+            }
+      }
     }
 }

@@ -1,8 +1,39 @@
 .FeaturesCard {
     display: flex;
     flex-direction: column;
-    &__icon {
-        height: 50px;
-        padding-top:20px ;
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+    fill: var(--headline-color);
+    height: 50px;
+    padding-top:20px ;
+    }
+
+
+    @media only screen and (min-width: 600px) {
+            & {
+                
+            align-items: flex-start;
+            justify-content: flex-start;
+            }
+            & svg {
+                fill: white;
+                align-items: center;
+                }
+            &__text {
+                color: white;
+            }
+            &__text::before {
+                border-radius: 50%;
+                width: 5px;
+                height: 5px;
+                margin-top: 8px;
+                margin-right: 10px;
+                background-color: white;
+                float: left;
+                display: block;
+                content: "";
+            }
     }
 }

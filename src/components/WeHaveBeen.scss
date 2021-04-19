@@ -1,9 +1,28 @@
-.WeHaveBeen {
+.weHaveBeen {
     background-color: #F4F6F9;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 20px;
     &__image {
         margin:15px;
     }
+    &__headline {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    @media only screen and (min-width: 600px) {
+        
+        &__container {
+          display: flex;
+          justify-content: center;
+          align-items: center;   
+        } 
+        &__headline {
+            text-align: center;
+        }
+      }
 }

@@ -14,9 +14,9 @@ function TwitterCarousel() {
   }, []);
   
   return (
-   <>
-   <h1 className="carouselHeadline">What Our Users Say</h1>
-   <Carousel cols={4} rows={1} gap={10} showDots loop responsiveLayout={[
+   <div className="carousel">
+   <h1 className="carousel__Headline">What Our Users Say</h1>
+   <Carousel  cols={4} rows={1} gap={10} showDots loop responsiveLayout={[
   {
     breakpoint: 800,
     cols: 2,
@@ -36,9 +36,8 @@ function TwitterCarousel() {
     {data.map(function (arrayItem) {
           return (
 
-      <Carousel.Item>
+      <Carousel.Item key={arrayItem.ID} >
         <Twitter 
-        key={arrayItem.ID} 
         headline={arrayItem.name}
         image={arrayItem.image} 
         text={arrayItem.text}
@@ -52,7 +51,7 @@ function TwitterCarousel() {
       
     </Carousel>
 
-   </>
+   </div>
     
   );
 }
